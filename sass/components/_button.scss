@@ -1,0 +1,21 @@
+.btn {
+  transition: all .2s;
+
+  &:link,
+  &:visited {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 400;
+    background-color: $color-black;
+    border-radius: 2rem;
+    padding: .7rem 1.5rem;
+    color: $color-off-white;
+    display: inline-block;
+    box-shadow: 0 1rem 2rem rgba($color-black, .2);
+  }
+
+  &:hover {
+    transform: translateY(-.3rem) scale(1.2);
+    box-shadow: 0 1rem 3rem rgba($color-black, .4);
+  }
+}

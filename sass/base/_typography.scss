@@ -8,8 +8,16 @@
   transition: all .3s;
   margin: 3rem;
   display: inline-block;
+  text-transform: uppercase;
 
   &:hover {
     transform: skewY(10deg) scale(1.2);
   }
+}
+
+.tertiary-heading {
+  font-weight: 500;
+  font-size: 1.4rem;
+  margin: 1rem 0;
+  display: inline-block;
 }

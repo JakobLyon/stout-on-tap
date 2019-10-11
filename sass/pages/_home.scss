@@ -4,5 +4,14 @@
 }
 
 .section-shop {
-  
+  height: 130vh;
+  width: 100%;
+  transform: skewY(-7deg);
+  background-image: linear-gradient(to bottom right, $color-off-white, $color-grey-light);
+  margin-top: -5rem;
+  padding: 4rem 0;
+
+  & > * {
+    transform: skewY(7deg);
+  }
 }

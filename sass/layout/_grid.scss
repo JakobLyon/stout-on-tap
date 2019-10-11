@@ -1,8 +1,27 @@
 .row {
   margin: 0 auto;
   max-width: $grid-width;
+
+  // clearfix
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
   
   &:not(:last-child) {
     margin-bottom: 7rem;
+  }
+
+  [class^="col-"] {
+    float: left;
+
+    &:not(:last-child) {
+      margin-right: $gutter-horizontal;
+    }
+  }
+
+  .col-1-of-2 {
+    width: calc((100% - #{$gutter-horizontal}) / 2);
   }
 }
