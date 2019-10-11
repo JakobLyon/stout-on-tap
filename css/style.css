@@ -1,3 +1,6 @@
+.u-center-text {
+  text-align: center; }
+
 * {
   margin: 0;
   padding: 0;
@@ -10,6 +13,47 @@ body {
   font-size: 62.5%;
   margin: 2rem;
   background-color: #f7f1e3; }
+
+.secondary-heading {
+  text-align: center;
+  font-weight: 700;
+  font-size: 2rem;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(to right, #34ace0, #227093);
+  color: transparent;
+  transition: all .3s;
+  margin: 3rem;
+  display: inline-block; }
+  .secondary-heading:hover {
+    transform: skewY(10deg) scale(1.2); }
+
+.frayed-box-text {
+  text-align: center;
+  height: 8rem;
+  position: relative;
+  background-color: rgba(132, 129, 122, 0.5);
+  clip-path: polygon(0 0, 100% 0, 95% 50%, 100% 100%, 0 100%, 5% 50%, 0 0); }
+  .frayed-box-text__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    padding: 0 4rem;
+    font-size: 1.3rem; }
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: .4;
+  height: 100%;
+  width: 100%;
+  z-index: -1; }
+  .bg-video__content {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
 
 .header {
   background-image: url("../../resources/beer-barrel.jpg");
@@ -38,3 +82,13 @@ body {
     transition: all .2s; }
     .header__brand:hover {
       transform: skewX(15deg) scale(1.2); }
+
+.row {
+  margin: 0 auto;
+  max-width: 50rem; }
+  .row:not(:last-child) {
+    margin-bottom: 7rem; }
+
+.section-about-us {
+  position: relative;
+  height: 75vh; }

@@ -1,0 +1,15 @@
+.secondary-heading {
+  text-align: center;
+  font-weight: 700;
+  font-size: 2rem;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(to right, $color-secondary, $color-secondary-dark);
+  color: transparent;
+  transition: all .3s;
+  margin: 3rem;
+  display: inline-block;
+
+  &:hover {
+    transform: skewY(10deg) scale(1.2);
+  }
+}

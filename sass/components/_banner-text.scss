@@ -1,0 +1,17 @@
+.frayed-box-text {
+  text-align: center;
+  height: 8rem;
+  position: relative;
+  background-color: rgba($color-grey-dark, .5);
+  clip-path: polygon(0 0, 100% 0, 95% 50%, 100% 100%, 0 100%, 5% 50%, 0 0);
+
+  &__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    padding: 0 4rem;
+    font-size: 1.3rem;
+  }
+}

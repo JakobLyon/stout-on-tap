@@ -1,15 +1,14 @@
 // Configuration and helpers
-@import "abstracts/functions", "abstracts/mixins", "abstracts/variables";
+@import "abstracts/functions", "abstracts/mixins", "abstracts/utilities", "abstracts/variables";
 
 // Base and text styling
 @import "base/base", "base/typography";
 
 // Components
-// @import "components/"
+@import "components/banner-text", "components/bg-video";
 
 // Layout related
-@import "layout/header";
+@import "layout/header", "layout/grid";
 
 // Page specific
 @import "pages/home";
-
