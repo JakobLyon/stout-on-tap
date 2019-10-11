@@ -4,5 +4,37 @@
   box-sizing: inherit; }
 
 html {
-  box-sizing: border-box;
-  text-transform: uppercase; }
+  box-sizing: border-box; }
+
+body {
+  font-size: 62.5%;
+  margin: 2rem;
+  background-color: #f7f1e3; }
+
+.header {
+  background-image: url("../../resources/beer-barrel.jpg");
+  background-size: cover;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+  height: 75vh;
+  position: relative; }
+  .header__content {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+  .header__icon {
+    height: 17rem;
+    padding: 1rem;
+    background-color: rgba(255, 177, 66, 0.5);
+    border-radius: .5rem; }
+  .header__brand {
+    margin-top: 2rem;
+    font-size: 3rem;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(to right, #ffb142, #ffda79);
+    color: transparent;
+    transition: all .2s; }
+    .header__brand:hover {
+      transform: skewX(15deg) scale(1.2); }

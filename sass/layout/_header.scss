@@ -1,0 +1,36 @@
+.header {
+  background-image: url("../../resources/beer-barrel.jpg");
+  background-size: cover;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+  height: 75vh;
+  position: relative;
+
+  &__content {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  &__icon {
+    height: 17rem;
+    padding: 1rem;
+    background-color: rgba($color-primary, .5);
+    border-radius: .5rem;
+  }
+
+  &__brand {
+    margin-top: 2rem;
+    font-size: 3rem;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(to right, $color-primary, $color-primary-light);
+    color: transparent;
+    transition: all .2s;
+
+    &:hover {
+      transform: skewX(15deg) scale(1.2);
+    }
+  }
+}

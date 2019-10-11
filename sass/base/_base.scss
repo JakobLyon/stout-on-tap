@@ -6,5 +6,10 @@
 
 html {
   box-sizing: border-box;
-  text-transform: uppercase;
+}
+
+body {
+  font-size: 62.5%;
+  margin: 2rem;
+  background-color: $color-off-white;
 }
